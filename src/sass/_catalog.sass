@@ -1,0 +1,188 @@
+.catalog
+    padding: 0 0 100px 0
+    &__tabs
+        margin-top: 70px
+        list-style: none
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 0
+        padding-left: 0
+    &__tab
+        width: 222px
+        height: 52px
+        background: rgba(0, 0, 0, 0.0001)
+        border: 2px solid #D0D0D0
+        margin: 0 5px
+        cursor: pointer
+        transition: all 0.5s
+
+        &:hover
+            box-shadow: 3px 3px 20px red
+            border: none
+
+        font-family: 'MuseoModerno',sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 18px
+        text-transform: uppercase
+        color: #6B6B6B
+        text-align: center
+        line-height: 48px
+
+        transform: skewX(-25deg)
+        div
+            transform: skewX(25deg)
+        &_active
+            background: #C70101
+            color: #FFFFFF
+            border: none
+    &__content
+        width: 73%
+        margin-top: 60px
+        display: none
+        justify-content: space-between
+        flex-wrap: wrap
+        margin: 0 auto
+        margin-top: 57px
+        &_active
+            display: flex
+    &-item 
+        width: 303px
+        min-height: 442px
+        border: 2px solid #E8E8E8
+        padding: 20px 20px 26px 20px
+        overflow: hidden
+        margin-bottom: 19px
+        &__back
+            display: block
+            font-family: 'MuseoModerno',sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 14px
+            text-align: center
+            text-decoration-line: underline
+            text-transform: uppercase
+            color: #C70101
+            margin-top: 70px
+            margin-right: 30px
+            &:hover
+                color: #C70101 
+            
+        &__img
+            display: block
+            margin: 0 auto
+            max-width: 100%
+            height: 100%
+        &__subtitle
+            margin-top: 20px
+            font-family: 'MuseoModerno',sans-serif
+            font-style: normal
+            font-weight: 700
+            font-size: 16px
+            text-align: center
+            color: #0D0D0D
+        &__descr
+            margin-top: 16px
+            font-family: 'MuseoModerno',sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 22px
+            text-align: center
+            color: #0D0D0D
+        &__link
+            display: block
+            margin-top: 17px
+            font-family: 'MuseoModerno',sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 14px
+            text-decoration-line: underline
+            color: #C70101
+            text-align: center
+            &:hover
+                color: #C70101
+        hr
+            background: #E8E8E8
+            margin-top: 19px
+            margin-bottom: 21px
+            border-bottom: none
+        &__footer
+            display: flex
+            justify-content: space-between
+            
+        &__old-price
+            font-family: 'MuseoModerno',sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 14px
+            text-decoration-line: line-through
+            color: #555555
+        &__price 
+            font-family: 'MuseoModerno',sans-serif
+            font-style: normal
+            font-weight: 700
+            font-size: 20px
+            line-height: 20px
+            color: #050505
+        @import button
+        &__wrapper
+            display: flex  
+            width: calc(200% + 40px)
+
+        &__content
+            width: 50%
+            margin-right: 0px
+            transform: translateX(-100%)
+            transition: all 0.3s
+            img 
+                height: 200px
+            &_active
+                margin-top: 20px 
+                transform: translateX(0%)
+
+
+        &__list
+            width: 50%
+            margin-left: 20px
+            transform: translateX(0%)
+            padding-right: 20px
+            transition: all 0.3s
+            padding-left: 19px
+            margin-bottom: 0
+            list-style: none
+            position: relative
+
+            
+            li 
+                position: relative
+                font-family: 'MuseoModerno',sans-serif
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 21px
+                color: #555555
+                margin-bottom: 20px
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 5px
+                    height: 5px
+                    background-color: #C70101
+                    left: -14px
+                    top: 7px
+
+
+            &_active 
+                transform: translateX(-100%)
+                margin-left: 0px
+
+
+        
+
+
